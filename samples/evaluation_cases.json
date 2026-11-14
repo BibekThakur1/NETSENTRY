@@ -1,0 +1,729 @@
+[
+  {
+    "name": "normal_auth",
+    "expected_rules": [],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:30+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:40+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:50+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "employee"
+      }
+    ]
+  },
+  {
+    "name": "brute_force",
+    "expected_rules": [
+      "brute_force"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:04+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:08+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:12+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:16+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:24+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:28+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:32+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:36+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "admin"
+      }
+    ]
+  },
+  {
+    "name": "port_scan",
+    "expected_rules": [
+      "port_scan"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1000
+      },
+      {
+        "timestamp": "2026-11-14T08:00:02+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1001
+      },
+      {
+        "timestamp": "2026-11-14T08:00:04+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1002
+      },
+      {
+        "timestamp": "2026-11-14T08:00:06+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1003
+      },
+      {
+        "timestamp": "2026-11-14T08:00:08+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1004
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1005
+      },
+      {
+        "timestamp": "2026-11-14T08:00:12+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1006
+      },
+      {
+        "timestamp": "2026-11-14T08:00:14+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1007
+      },
+      {
+        "timestamp": "2026-11-14T08:00:16+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1008
+      },
+      {
+        "timestamp": "2026-11-14T08:00:18+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1009
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1010
+      },
+      {
+        "timestamp": "2026-11-14T08:00:22+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1011
+      },
+      {
+        "timestamp": "2026-11-14T08:00:24+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1012
+      },
+      {
+        "timestamp": "2026-11-14T08:00:26+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1013
+      },
+      {
+        "timestamp": "2026-11-14T08:00:28+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1014
+      },
+      {
+        "timestamp": "2026-11-14T08:00:30+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1015
+      },
+      {
+        "timestamp": "2026-11-14T08:00:32+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1016
+      },
+      {
+        "timestamp": "2026-11-14T08:00:34+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1017
+      },
+      {
+        "timestamp": "2026-11-14T08:00:36+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1018
+      },
+      {
+        "timestamp": "2026-11-14T08:00:38+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 1019
+      }
+    ]
+  },
+  {
+    "name": "traffic_spike",
+    "expected_rules": [
+      "high_traffic"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "traffic",
+        "bytes_transferred": 250000
+      },
+      {
+        "timestamp": "2026-11-14T08:00:05+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "traffic",
+        "bytes_transferred": 250000
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "traffic",
+        "bytes_transferred": 250000
+      },
+      {
+        "timestamp": "2026-11-14T08:00:15+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "traffic",
+        "bytes_transferred": 250000
+      }
+    ]
+  },
+  {
+    "name": "password_spray",
+    "expected_rules": [
+      "distributed_auth"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user0"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:05+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user1"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user2"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:15+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user3"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user4"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:25+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user5"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:30+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user6"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:35+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "user7"
+      }
+    ]
+  },
+  {
+    "name": "privilege_change",
+    "expected_rules": [
+      "privilege_escalation"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:01+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "privilege_change",
+        "username": "admin",
+        "details": "Added member to admins"
+      }
+    ]
+  },
+  {
+    "name": "local_indicator",
+    "expected_rules": [
+      "suspicious_ip"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:01+00:00",
+        "source_ip": "203.0.113.66",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      }
+    ]
+  },
+  {
+    "name": "success_after_fail",
+    "expected_rules": [
+      "auth_success_after_fail"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "analyst"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:05+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "analyst"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "analyst"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:15+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "analyst"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_failed",
+        "username": "analyst"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:30+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "login_success",
+        "username": "analyst"
+      }
+    ]
+  },
+  {
+    "name": "outbound_volume",
+    "expected_rules": [
+      "outbound_transfer"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:01+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_conn",
+        "destination_ip": "8.8.8.8",
+        "destination_port": 443,
+        "bytes_transferred": 6000000
+      }
+    ]
+  },
+  {
+    "name": "dns_long_queries",
+    "expected_rules": [
+      "dns_anomaly"
+    ],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0.demo.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1.demo.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:40+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2.demo.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3.demo.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa4.demo.example",
+        "destination_ip": "10.0.0.53"
+      }
+    ]
+  },
+  {
+    "name": "single_port_connections",
+    "expected_rules": [],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:01+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:02+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:03+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:04+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:05+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:06+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:07+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:08+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:09+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:10+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:11+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:12+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:13+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:14+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:15+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:16+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:17+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:18+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:19+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:21+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:22+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:23+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      },
+      {
+        "timestamp": "2026-11-14T08:00:24+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "connection",
+        "destination_ip": "10.0.0.10",
+        "destination_port": 443
+      }
+    ]
+  },
+  {
+    "name": "short_dns_queries",
+    "expected_rules": [],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "normal0.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "normal1.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:00:40+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "normal2.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:00+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "normal3.example",
+        "destination_ip": "10.0.0.53"
+      },
+      {
+        "timestamp": "2026-11-14T08:01:20+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_dns",
+        "query": "normal4.example",
+        "destination_ip": "10.0.0.53"
+      }
+    ]
+  },
+  {
+    "name": "internal_backup",
+    "expected_rules": [],
+    "events": [
+      {
+        "timestamp": "2026-11-14T08:00:01+00:00",
+        "source_ip": "192.0.2.10",
+        "event_type": "zeek_conn",
+        "destination_ip": "10.0.0.20",
+        "destination_port": 445,
+        "bytes_transferred": 6000000
+      }
+    ]
+  }
+]

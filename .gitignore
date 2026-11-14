@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/netsentry.db
+backend/*.db
+frontend/node_modules/
+frontend/dist/
+.DS_Store
+tmp/
+frontend/tsconfig.tsbuildinfo
+backend/netsentry-demo.db

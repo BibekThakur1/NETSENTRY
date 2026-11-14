@@ -1,0 +1,59 @@
+{
+  "conditions": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.0",
+    "cpu_count": 8,
+    "database": "isolated SQLite file per size",
+    "transport": "FastAPI TestClient multipart requests",
+    "event_mix": "synthetic normal login_success, no expected alerts",
+    "file_limit": "10,000 events per upload",
+    "memory_note": "ru_maxrss peak for each isolated child process"
+  },
+  "results": [
+    {
+      "events": 1000,
+      "uploaded_files": 1,
+      "imported_events": 1000,
+      "alerts": 0,
+      "incidents": 0,
+      "wall_seconds": 0.188,
+      "throughput_events_per_second": 5318.7,
+      "detection_ms_total": 3.23,
+      "correlation_ms_total": 0.32,
+      "ingest_request_ms_total": 133.67,
+      "peak_rss_mb": 87.9,
+      "max_batch_events": 1000,
+      "process_wall_seconds": 0.91
+    },
+    {
+      "events": 10000,
+      "uploaded_files": 1,
+      "imported_events": 10000,
+      "alerts": 0,
+      "incidents": 0,
+      "wall_seconds": 1.593,
+      "throughput_events_per_second": 6275.5,
+      "detection_ms_total": 32.04,
+      "correlation_ms_total": 3.18,
+      "ingest_request_ms_total": 1530.89,
+      "peak_rss_mb": 153.5,
+      "max_batch_events": 10000,
+      "process_wall_seconds": 2.247
+    },
+    {
+      "events": 100000,
+      "uploaded_files": 10,
+      "imported_events": 100000,
+      "alerts": 0,
+      "incidents": 0,
+      "wall_seconds": 16.706,
+      "throughput_events_per_second": 5985.7,
+      "detection_ms_total": 340.18,
+      "correlation_ms_total": 34.13,
+      "ingest_request_ms_total": 16410.41,
+      "peak_rss_mb": 152.0,
+      "max_batch_events": 10000,
+      "process_wall_seconds": 17.432
+    }
+  ]
+}

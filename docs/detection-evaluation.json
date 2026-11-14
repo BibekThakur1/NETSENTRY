@@ -1,0 +1,245 @@
+{
+  "dataset": "labelled synthetic scenarios",
+  "scenario_count": 13,
+  "passed_count": 13,
+  "failed_count": 0,
+  "negative_scenario_count": 4,
+  "confusion_matrix": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "tn": 108
+  },
+  "detection_ms_total": 0.631,
+  "overall": {
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "tn": 108,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_rate": 0.0
+  },
+  "per_rule": {
+    "brute_force": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "port_scan": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "high_traffic": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "distributed_auth": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "privilege_escalation": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "suspicious_ip": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "dns_anomaly": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "outbound_transfer": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "auth_success_after_fail": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0
+    }
+  },
+  "scenarios": [
+    {
+      "name": "normal_auth",
+      "expected": [],
+      "detected": [],
+      "passed": true,
+      "detection_ms": 0.033
+    },
+    {
+      "name": "brute_force",
+      "expected": [
+        "brute_force"
+      ],
+      "detected": [
+        "brute_force"
+      ],
+      "passed": true,
+      "detection_ms": 0.078
+    },
+    {
+      "name": "port_scan",
+      "expected": [
+        "port_scan"
+      ],
+      "detected": [
+        "port_scan"
+      ],
+      "passed": true,
+      "detection_ms": 0.108
+    },
+    {
+      "name": "traffic_spike",
+      "expected": [
+        "high_traffic"
+      ],
+      "detected": [
+        "high_traffic"
+      ],
+      "passed": true,
+      "detection_ms": 0.028
+    },
+    {
+      "name": "password_spray",
+      "expected": [
+        "distributed_auth"
+      ],
+      "detected": [
+        "distributed_auth"
+      ],
+      "passed": true,
+      "detection_ms": 0.048
+    },
+    {
+      "name": "privilege_change",
+      "expected": [
+        "privilege_escalation"
+      ],
+      "detected": [
+        "privilege_escalation"
+      ],
+      "passed": true,
+      "detection_ms": 0.012
+    },
+    {
+      "name": "local_indicator",
+      "expected": [
+        "suspicious_ip"
+      ],
+      "detected": [
+        "suspicious_ip"
+      ],
+      "passed": true,
+      "detection_ms": 0.014
+    },
+    {
+      "name": "success_after_fail",
+      "expected": [
+        "auth_success_after_fail"
+      ],
+      "detected": [
+        "auth_success_after_fail"
+      ],
+      "passed": true,
+      "detection_ms": 0.038
+    },
+    {
+      "name": "outbound_volume",
+      "expected": [
+        "outbound_transfer"
+      ],
+      "detected": [
+        "outbound_transfer"
+      ],
+      "passed": true,
+      "detection_ms": 0.036
+    },
+    {
+      "name": "dns_long_queries",
+      "expected": [
+        "dns_anomaly"
+      ],
+      "detected": [
+        "dns_anomaly"
+      ],
+      "passed": true,
+      "detection_ms": 0.03
+    },
+    {
+      "name": "single_port_connections",
+      "expected": [],
+      "detected": [],
+      "passed": true,
+      "detection_ms": 0.156
+    },
+    {
+      "name": "short_dns_queries",
+      "expected": [],
+      "detected": [],
+      "passed": true,
+      "detection_ms": 0.02
+    },
+    {
+      "name": "internal_backup",
+      "expected": [],
+      "detected": [],
+      "passed": true,
+      "detection_ms": 0.03
+    }
+  ]
+}
